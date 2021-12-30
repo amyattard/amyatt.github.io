@@ -8,6 +8,7 @@ body{
     min-height: 100vh;
     display: grid;
     place-items: center;
+    text-align: justify;
 }
 
 .card{
@@ -110,13 +111,13 @@ hr {
   /* The Modal (background) */
   .modal {
     display: none;
+    position: fixed;
     z-index: 1;
     padding-top: 70px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
     background-color: white;
     background-size: cover;
   }
@@ -200,37 +201,33 @@ hr {
 
 /*  medium devices and up to extra large devices*/
 @media (min-width: 756px) and (max-width: 1199.98px) {
-    .mySlides{
-      height:300px;
-      width:300px;
-      margin-top: 25px;
-      margin-bottom: 25px;
-      margin-right: 25px;
-      margin-left: 25px;
+    .mySlides img{
+      width: 500px;
+    }
+      .column{
+        height:267px;
+        width:336px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-right: -65px;
+        margin-left: 52px;
+      }
   }
-  }
-  
-    @media (min-width: 556px) and (max-width: 756px) {
-   .column{
-    height:350px;
-    width:336px;
-    margin-top: -60px;
-    margin-bottom: 25px;
-    margin-right: -80px;
-    margin-left: 58px;
-  }
-  }
-  
+    
   
    @media (min-width: 446px) and (max-width: 556px) {
   
    .column{
-      height:307px;
-      width:256px;
+      height:453px;
+      width:415px;
       margin-top: -78px;
       margin-bottom: 7px;
       margin-right: -58px;
-      margin-left: 35px;
+      margin-left: 25px;
+    }
+
+    .mySlides img{
+      width: 400px;
     }
   }
   
@@ -238,17 +235,17 @@ hr {
   
     .column{
       height: 325px;
-      width:325px;
+      width:337px;
       margin-right: -15px;
-      margin-left: 35px;
+      margin-left: 17px;
     }
 
     .mySlides img {
-      width: 260px;
+      width: 318px;
     }
 
     .modal-content{
-      max-width: 260px;
+      max-width: 318px;
       margin: 20px;
       padding: 0px;
     }
