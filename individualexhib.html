@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/0739becac4.js" crossorigin="anonymous"></script>
+    <title>Individual Exhibtion</title>
+
+    <link rel="stylesheet" href="card.css">
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+<body>
+
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">BFA Digital Arts</label>
+        <ul>
+
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="#">Exhibition</a></li>
+            <li><a href="Sponsors.html">Sponsors</a></li>
+            <li><a href="ContactForm.html">Contact</a></li>
+            <li><a href="https://www.um.edu.mt/maks/digitalarts" target="_blank">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="card">
+
+        <div class="profile-sidebar">
+            <img src="images/profile-08.png" alt="profile">
+        </div>
+
+        <div class="profile-main"></div>
+        <h2 class="profilename"> Abby Bonello</h2>
+        <p class="profile-position">Illustrator</p>
+        <p class="profile-body">
+            Abby's thesis aims to explore the relationship between fine art practices and concept art. It is a personal
+            study done with both the intent to improve her own capabilities and to also explore the connection between
+            colour and atmosphere in an image. The final pieces presented are comprised of concept art which aims to
+            portray different atmospheric qualities. Digitally painted using the Zorn palette, two undescribed
+            characters face lands strewn with different atmospheric conditions.
+        </p>
+    </div>
+
+
+    <hr>
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+        <div class="column">
+            <img src="images/work1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/work2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/work3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/work4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+    </div>
+
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/work1.jpg" style="width:500px">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/work2.jpg" style="width:500px">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/work3.jpg" style="width:500px">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/work4.jpg" style="width:500px">
+            </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+
+</html>
