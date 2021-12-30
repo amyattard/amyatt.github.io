@@ -241,6 +241,16 @@ hr {
       margin-right: -15px;
       margin-left: 35px;
     }
+
+    .mySlides img {
+      width: 260px;
+    }
+
+    .modal-content{
+      max-width: 260px;
+      margin: 20px;
+      padding: 0px;
+    }
   }
 
 
