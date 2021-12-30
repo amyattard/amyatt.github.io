@@ -92,8 +92,8 @@ hr {
 
 
 
-.row > .column {
-  padding-left: 20px;
+.row{
+  padding-left: 30px;
 }
 
 .row:after {
