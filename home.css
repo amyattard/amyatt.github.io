@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+.container{
+    width: 100%;
+    height: 25vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 3%;
+    box-sizing: border-box;
+    
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width:30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+    padding-left: 8%;
+
+}
+
+h1{
+    color: rgb(127, 82, 165);
+    font-size: 100px;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(127, 82, 165);
+    font-size: 15px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+button{
+    width: 150px;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 12px 0;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: rgb(98, 77, 110);
+
+
+}
+
+
+button:hover {
+    opacity: 50%;
+    box-shadow: 0px 10px 15px rgba(172, 172, 172, 0.4);
+  }
+
+.card{
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition-duration:0.5s;
+}
+
+.card1{
+    background-image: url(images/girlpink.jpg);
+}
+
+
+.card2{
+    background-image: url(images/boyyellow.jpg);
+}
+
+
+.card3{
+    background-image: url(images/boyblue.jpg);
+}
+
+
+.card4{
+    background-image: url(images/girlpurple.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    opacity: 50%;
+
+    
+}
+
+h5{
+    color: white;
+    text-shadow: 0 0 5px rgb(102, 102, 102);
+    text-align: center;
+    padding-top: 160px;
+}
+

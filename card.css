@@ -200,23 +200,23 @@ hr {
 
 
 /*  medium devices and up to extra large devices*/
-@media (min-width: 756px) and (max-width: 1199.98px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .mySlides img{
     width: 500px;
   }
     .column{
-      height:267px;
-      width:336px;
+      height:330px;
+      width:386px;
       margin-top: 25px;
       margin-bottom: 25px;
-      margin-right: -65px;
-      margin-left: 52px;
+      margin-right: -75px;
+      margin-left: 90px;
     }
 }
   
 
 
- @media (min-width: 375px) and (max-width: 556px) {
+ @media (min-width: 576px) and (max-width: 768px) {
 
  .column{
     height:400px;
@@ -224,7 +224,7 @@ hr {
     margin-top: -78px;
     margin-bottom: 7px;
     margin-right: -58px;
-    margin-left: 20px;
+    margin-left: 38px;
   }
 
   .mySlides img{
@@ -233,13 +233,33 @@ hr {
 }
 
 
- @media (min-width: 300px) and (max-width: 375px) {
+ @media (min-width: 300px) and (max-width: 576px) {
 
   .column{
-    height: 325px;
-    width:325px;
+    height: 505px;
+    width:448px;
+    margin-right: 0px;
+    margin-left: 58px;
+  }
+
+  .mySlides img {
+    width: 445px;
+  }
+
+  .modal-content{
+    max-width: 470px;
+    margin: 22px;
+    padding: 28px;
+  }
+}
+
+@media (min-width: 250px) and (max-width: 300px) {
+
+  .column{
+    height: 286px;
+    width:292px;
     margin-right: -15px;
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   .mySlides img {
@@ -252,6 +272,7 @@ hr {
     padding: 0px;
   }
 }
+
 
 
 
