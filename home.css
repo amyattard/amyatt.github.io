@@ -2,64 +2,200 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-   
 }
 
-.container{
+body {
+    margin: 0;
+    background-color: rgb(249, 248, 255);
+}
+  
+  .header-fixed {
+      position: fixed;
+      top: 0;
+      z-index: 1;
+      width: 100%;
+      background-color:  #996db3;
+      box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
+  }
+  
+  .navbar {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      color: #fff;
+      line-height: 60px;
+  }
+  
+  .navbar .logo {
+      flex: 3.5; 
+  }
+  
+  .navbar .logo a {
+      display: block;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      padding-left: 10px;
+  }
+  .navbar .logo a:hover {
+    color: #ffffff;
+  }
+  
+  .navbar nav {
+      flex: 3;
+  }
+  
+  .navbar label {
+    user-select: none;
+    cursor: pointer;
+    padding: 28px 20px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .navbar label i {
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+    font-style: normal;
+    font-weight: normal;
+  }
+  .navbar label i:before,
+  .navbar label i:after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
     width: 100%;
-    height: 25vh;
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 3%;
-    box-sizing: border-box;
+  }
+  .navbar label i,
+  .navbar label i:before,
+  .navbar label i:after {
+    display: block;
+    background: #eee;  
+  }
+  .navbar label i:before {
+    top: 5px;
+  }
+  .navbar label i:after {
+    top: -5px;
+  }
+  
+  .navbar #navbar-toggle {
+    display: none;
+  }
+  
+  .header #navbar-toggle:checked ~ .menu {
+    visibility: visible;
+    opacity: 0.99;
+  }
+  .header #navbar-toggle:checked ~ label {
+    background: #8437a7;
+    border-radius: 50%;    
+  }
+  .header #navbar-toggle:checked ~ label i {
+    background: transparent;
+  }
+  .header #navbar-toggle:checked ~ label i:before {
+    transform: rotate(-45deg);
+  }
+  .header #navbar-toggle:checked ~ label i:after {
+    transform: rotate(45deg);
+  }
+  .header #navbar-toggle:checked ~ label:not(.steps) i:before,
+  .header #navbar-toggle:checked ~ label:not(.steps) i:after {
+    top: 0;
+  }
+  
+  @media (max-width: 768px) {
+      .navbar nav {
+        visibility: hidden;
+        opacity: 0;
+        z-index: 2;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-out;
+        display: table;
+        background: #ddd;
+      }
+      .navbar nav ul {
+        margin: 0;
+        padding: 20px 0;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .navbar nav li {
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        text-align: center;
+        font-size: 50px;
+        min-height: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-out;
+      }
+      .navbar nav li:hover {
+        background: #9456da;
+      }
+      .navbar nav li:hover a {
+        color: #fff;
+        transition: all 0.3s ease-out;
+      }
+      .navbar nav li a {
+        color: #212121;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      .navbar nav ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        list-style: none;
+      }
+      .navbar nav li {
+        flex: 1;
+      }
+      .navbar nav li a {
+        display: block;
+        padding: 0 8px;
+        font-size: 16px;
+        line-height: 60px;
+        color: #fff;
+        text-decoration: none;
+      }
+      .navbar nav li.active {
+        background: #555;  
+      }
+      .navbar nav li:hover {
+        background: rgb(69, 24, 99);
+      }
+      .navbar label {
+        display: none;
+      }
+  }
+  
+
     
-}
-
-.navbar{
-    height: 12%;
-    display: flex;
-    align-items: center;
-}
-
-.logo{
-    width: 50px;
-    cursor: pointer;
-}
-
-.menu-icon{
-    width:30px;
-    cursor: pointer;
-    margin-left: 40px;
-}
-
-nav{
-    flex: 1;
-    text-align: right;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 60px;
-}
-
-nav ul li a{
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
-}
-
-.row{
-    display: flex;
-    height: 88%;
-    align-items: center;
-}
-
-.col{
-    flex-basis: 50%;
-    padding-left: 8%;
-
-}
+    .row{
+        display: flex;
+        height: 88%;
+        align-items: center;
+        padding-top: 130px;
+    }
+    
+    .col{
+        flex-basis: 50%;
+        padding-left: 8%;
+    }
 
 h1{
     color: rgb(127, 82, 165);
@@ -81,20 +217,20 @@ button{
     padding: 12px 0;
     border-radius: 20px;
     margin-top: 20px;
-    background-color: rgb(98, 77, 110);
+    background-color: rgb(69, 24, 99);
 
 
 }
 
 
 button:hover {
-    opacity: 50%;
+    background-color: rgb(118, 60, 156);
     box-shadow: 0px 10px 15px rgba(172, 172, 172, 0.4);
   }
 
 .card{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     display: inline-block;
     border-radius: 20px;
     padding: 15px 25px;
@@ -104,6 +240,7 @@ button:hover {
     background-position: center;
     background-size: cover;
     transition-duration:0.5s;
+    box-shadow: 0px 10px 15px rgba(131, 131, 131, 0.4);
 }
 
 .card1{
@@ -127,7 +264,6 @@ button:hover {
 
 .card:hover{
     transform: translateY(-10px);
-    opacity: 50%;
 
     
 }
@@ -136,6 +272,9 @@ h5{
     color: white;
     text-shadow: 0 0 5px rgb(102, 102, 102);
     text-align: center;
-    padding-top: 160px;
+    padding-top: 210px;
 }
+
+
+  /*Navbar referenced from: https://youtu.be/At4B7A4GOPg */ 
 

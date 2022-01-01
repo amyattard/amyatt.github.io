@@ -8,6 +8,7 @@
     <title>BFA exhbition homepage</title>
 
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -16,20 +17,24 @@
 
 <body>
 
-    <div class="container">
-        <div class="navbar">
-            <img src="images/art.png" class="logo">
-            <nav>
+    <div class="header header-fixed">
+        <div class="navbar container">
+            <div class="logo"><a href="#home">LOGO</a></div>
+            <input type="checkbox" id="navbar-toggle">
+            <label for="navbar-toggle"><i></i></label>
+            <nav class="menu">
                 <ul>
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="">SPONSORS</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
                 </ul>
             </nav>
-            <img src="images/dots-menu.png" class="menu-icon">
         </div>
     </div>
+
+
+
 
     <div class="row">
         <div class="col">
