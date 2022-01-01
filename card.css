@@ -124,7 +124,7 @@ hr {
 
 /* Modal Content */
 .modal-content {
-  position: sticky;
+  position: relative;
   margin: auto;
   padding-left: 0;
   width: 90%;
