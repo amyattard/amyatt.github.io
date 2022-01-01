@@ -216,7 +216,7 @@ hr {
   
 
 
- @media (min-width: 576px) and (max-width: 768px) {
+ @media (max-width: 768px) {
 
  .column{
     height:400px;
@@ -233,7 +233,7 @@ hr {
 }
 
 
- @media (min-width: 300px) and (max-width: 576px) {
+ @media  (max-width: 576px) {
 
   .column{
     height: 505px;
@@ -253,7 +253,7 @@ hr {
   }
 }
 
-@media (min-width: 250px) and (max-width: 300px) {
+@media (max-width: 300px) {
 
   .column{
     height: 286px;
