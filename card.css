@@ -239,15 +239,15 @@ hr {
     height: 505px;
     width:448px;
     margin-right: 0px;
-    margin-left: 58px;
+    margin-left: 15px;
   }
 
   .mySlides img {
-    width: 445px;
+    width: 400px;
   }
 
   .modal-content{
-    max-width: 470px;
+    max-width: 425px;
     margin: 22px;
     padding: 28px;
   }
