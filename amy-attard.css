@@ -10,6 +10,8 @@ body {
     align-content: center;
 }
   
+/*Navbar referenced from: https://youtu.be/At4B7A4GOPg */ 
+
   .header-fixed {
       position: fixed;
       top: 0;
@@ -186,7 +188,7 @@ body {
       }
   }
   
-
+/*Content structure referenced from: https://youtu.be/Oa9LTDR9ugU */ 
     
     .row{
         display: flex;
@@ -223,9 +225,7 @@ button{
     margin-left:100px;
     background-color: rgb(207, 21, 145);
 
-
 }
-
 
 button:hover {
     background-color: rgb(248, 47, 181);
@@ -267,9 +267,7 @@ button:hover {
 }
 
 .card:hover{
-    transform: translateY(-10px);
-
-    
+    transform: translateY(-10px);  
 }
 
 h5{
@@ -279,9 +277,6 @@ h5{
     padding-top: 245px;
 }
 
-
-  /*Navbar referenced from: https://youtu.be/At4B7A4GOPg */ 
-
   @media (min-width: 300px) and (max-width:420px){
   .col h1{
     font-size: 60px;
@@ -289,14 +284,12 @@ h5{
 
   .row{
     flex-direction: column;
-   
   }
 
   .col .pictures{
     align-content: center;
     margin-top: 20%;
     margin-left: 6%;
-
   }
 
   p{
@@ -315,8 +308,6 @@ h5{
     margin-top: 15%;
     margin-left: 5%;
   }
-
-  
 
   h1{
     font-size: 80px;
