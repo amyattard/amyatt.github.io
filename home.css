@@ -298,6 +298,10 @@ h5{
     margin-left: 8%;
 
   }
+
+  p{
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 768px){
