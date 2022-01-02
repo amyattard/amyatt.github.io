@@ -11,6 +11,8 @@ body{
   text-align: justify;
 }
 
+/*profile layout referenced from https://youtu.be/51DbAwcmqD8*/
+
 .card{
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   width: 80%;
@@ -87,10 +89,10 @@ hr {
   border: 0;
   height: 30px;
   padding-bottom: 100px;
-  /* https://css-tricks.com/examples/hrs/ */
 }
 
 
+/*image carousel referenced from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp */
 
 .row{
   padding-left: 30px;
@@ -273,10 +275,6 @@ hr {
   }
 }
 
-
-
-
-
 /*Navbar referenced from: https://www.youtube.com/watch?v=oLgtucwjVII&t=201s */
 
 *{
@@ -410,3 +408,28 @@ a:hover,a.active{
   right:0;
 }
 }
+
+/*Footer referenced from: https://codepen.io/sanketbodke/pen/MWmXqVw*/
+
+.footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #264653;
+  text-align: center;
+  color: #f4f4f4;
+}
+
+.icons{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.icons a{
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: #f4f4f4;
+}
+  
