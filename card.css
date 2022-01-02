@@ -258,10 +258,11 @@ hr {
 @media (min-width: 300px) and (max-width:576px){
 
   .column{
+    align-content: auto;
     height: 360px;
     width:292px;
     margin-right: -15px;
-    margin-left: 20px;
+    margin-left: 40px;
   }
 
   .mySlides img {
