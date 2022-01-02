@@ -33,6 +33,7 @@ body {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.5s;
+    text-decoration: none;
   }
   
   .image_overlay > * {
@@ -52,12 +53,16 @@ body {
     font-size: 2em;
     font-size: 2vw;
     font-weight: bold;
+    color: white;
+    text-align: center;
   }
   
   .image_description {
     font-size: 1em;
     font-size: 1vw;
     margin-top: 0.25em;
+    color: white;
+    text-align: center;
   }
   
   @media (max-width: 858px) {
