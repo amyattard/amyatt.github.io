@@ -33,7 +33,6 @@ body {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.5s;
-    text-decoration: none;
   }
   
   .image_overlay > * {
