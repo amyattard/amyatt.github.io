@@ -65,9 +65,9 @@ body {
     text-align: center;
   }
   
-  @media (max-width: 858px) {
+  @media (max-width: 525px) {
     .image {
-      width: 80%;
+      width: auto;
     }
   }
   
