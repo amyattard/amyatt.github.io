@@ -255,10 +255,10 @@ hr {
   }
 }
 
-@media (min-width: 300px) and (max-width:576px){
+@media (max-width:576px){
 
+  
   .column{
-    align-content: auto;
     height: 360px;
     width:292px;
     margin-right: -15px;
@@ -274,6 +274,15 @@ hr {
     margin: auto;
     padding: 0px;
   }
+}
+
+@media (max-width: 320px){
+  .column {
+    height: 360px;
+    width: 292px;
+    margin-right: -15px;
+    margin-left: 19px;
+}
 }
 
 /*Navbar referenced from: https://www.youtube.com/watch?v=oLgtucwjVII&t=201s */
