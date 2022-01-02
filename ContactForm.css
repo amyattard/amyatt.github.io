@@ -1,0 +1,252 @@
+/*Navbar referenced from: https://www.youtube.com/watch?v=oLgtucwjVII&t=201s */
+
+*{
+	padding:0 ;
+	margin:0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*nav bar background*/
+
+nav{
+	background: white;
+	height:80%;
+	width:100%;
+	z-index: 2;
+
+}
+
+/*logo top left*/
+
+label[class=logo]{
+color: black;
+font-family: 'Montserrat', sans-serif;
+font-size: 32px;
+line-height:80px;
+font-weight: bold;
+margin-bottom:0%;
+margin-left: 20px;
+}
+
+
+/*navbar content */
+
+nav ul{
+	float:right;
+	margin-right:0%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	z-index: 2;
+	padding-right: 10px;
+}
+
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin:0px;
+}
+nav ul li a{
+	color: black;
+	font-size: 17px;
+	padding: 7px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+}
+
+/*hovering over the navbar content*/
+a.active,a:hover{
+	background: #8f8f8f;
+	color:white;
+	transition:.5s;
+}
+
+/*burger menu */
+.checkbtn{
+	font-size: 30px;
+	color:black;
+	float:right;
+	line-height:80px;
+	margin-right:40px;
+	cursor: pointer;
+	display: none;
+    margin-top: 0px;
+}
+
+#check{
+	display: none;
+}
+@media(max-width:952px){
+label[class=logo]{
+	font-size: 25px;
+
+
+}
+nav ul li a{
+	font-size:16px;
+}
+}
+
+@media(min-width:952px){
+ul{
+	height:50px;
+	}
+}
+/*navbar when screen is small*/
+@media(max-width:858px){
+	.checkbtn{
+		display:block;
+	}
+	
+	ul{
+		position: fixed;
+		width:100%;
+		background: #F7F7F7;
+		top:80px;
+		right:-106%;
+		text-align: center;
+		transition: all .5s;
+		z-index: 2;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height:30px;
+		z-index: 2;
+	}
+	nav ul li a{
+		font-size:20px;
+		 z-index: 2;
+	}
+
+	/*colour when I hover over on the navbar content when small*/
+	a:hover,a.active{
+		background: #8f8f8f;
+		color:white;
+	}
+	#check:checked~ul{
+		right:0;
+	}
+}
+
+
+img {
+  opacity: 0.5;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom:20px;
+    color:white;
+}
+
+h1{
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (max-width: 1920px) {
+/*text inside the name box*/
+
+input[type=text] {
+text-align:left;
+width:90.5%;
+margin-left: 50px;
+margin-right: 50px;
+padding-left: 5px;
+}
+
+/*text inside the email box*/
+
+input[type=email] {
+text-align:left;
+width:80%;
+margin-left: 50px;
+margin-right: 50px;
+padding-left: 5px;
+}
+
+/*text inside the message box*/
+input[type=submit] {
+align-items:center;
+width:80%;
+margin-right: 50px;
+font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    text-align: left;
+}
+
+/*title of box*/
+label[for=fname]{
+    margin-left:30px;
+    margin-top:25px;
+    margin-bottom:20px;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+/*textareas */
+ #fname{
+      margin-left:30px;
+      width:90.5%;
+ }
+
+#email{
+     margin-left:30px;
+     width:90.5%;
+}
+
+textarea{
+text-align:left;
+width:90.5%;
+margin-left: 30px;
+margin-right: 50px;
+height:200px;
+padding-left: 5px;
+}
+
+/*submit button*/
+.col-1{
+    width:200px;
+    height: 20px;
+    align-content: center;
+    margin-top: 20px;
+    margin-left:30px;
+}
+}
+
+hr{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+/*when screen is small*/
+@media (max-width: 360px){
+    label[for=fname]{
+    margin-left:40px;
+    margin-top:25px;
+    margin-bottom:20px;
+    font-size: 15px;
+    }
+
+    #fname{
+        width:268.8px;
+    }
+    #email{
+         width:268.8px;
+    }
+    textarea{
+        width:268.8px;
+    }
+
+    .col-6{
+        overflow-x: hidden;
+    }
+}
