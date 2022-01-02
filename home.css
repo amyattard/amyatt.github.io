@@ -294,7 +294,8 @@ h5{
 
   .col .pictures{
     align-content: center;
-    margin-top: 30%;
+    margin-top: 20%;
+    margin-left: 8%;
 
   }
 }
@@ -308,7 +309,7 @@ h5{
   .col .pictures{
     align-content: center;
     margin-top: 15%;
-    margin-left: 10%;
+    margin-left: 5%;
   }
 
   
